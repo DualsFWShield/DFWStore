@@ -549,22 +549,19 @@
                     <div>
                          <p class="font-bold text-xl mb-6">> DISPONIBLE POUR RENDEZ-VOUS OU ASSISTANCE À DISTANCE</p>
                          <div class="flex flex-col gap-6 font-mono text-lg">
-                             <a href="mailto:contact@brns-help.com" class="flex items-center gap-2 hover:underline group">
+                             <a href="mailto:pfaz.inc@gmail.com" class="flex items-center gap-2 hover:underline group">
                                 <div class="w-2 h-2 bg-black group-hover:bg-white transition-colors"></div> 
-                                EMAIL: contact@brns-help.com
-                             </a>
-                             <a href="tel:+33600000000" class="flex items-center gap-2 hover:underline group">
-                                <div class="w-2 h-2 bg-black group-hover:bg-white transition-colors"></div>
-                                TÉL: +33 6 00 00 00 00
+                                EMAIL: pfaz.inc@gmail.com
                              </a>
                              <p class="text-sm mt-4 opacity-70">Réponse rapide garantie.</p>
                          </div>
                     </div>
                     
-                    <form class="flex flex-col gap-4">
-                        <input type="text" placeholder="NOM_PRÉNOM" class="bg-transparent border-2 border-black p-4 font-bold placeholder-black/50 focus:bg-white focus:placeholder-black outline-none transition-colors">
-                        <input type="email" placeholder="EMAIL" class="bg-transparent border-2 border-black p-4 font-bold placeholder-black/50 focus:bg-white focus:placeholder-black outline-none transition-colors">
-                        <textarea rows="4" placeholder="MESSAGE" class="bg-transparent border-2 border-black p-4 font-bold placeholder-black/50 focus:bg-white focus:placeholder-black outline-none transition-colors resize-none"></textarea>
+                    <form action="https://formspree.io/f/xbdrenbo" method="POST" class="flex flex-col gap-4">
+                        <input type="hidden" name="_subject" value="Nouveau message de Brn's Help">
+                        <input type="text" name="name" placeholder="NOM_PRÉNOM" required class="bg-transparent border-2 border-black p-4 font-bold placeholder-black/50 focus:bg-white focus:placeholder-black outline-none transition-colors">
+                        <input type="email" name="email" placeholder="EMAIL" required class="bg-transparent border-2 border-black p-4 font-bold placeholder-black/50 focus:bg-white focus:placeholder-black outline-none transition-colors">
+                        <textarea name="message" rows="4" placeholder="MESSAGE" required class="bg-transparent border-2 border-black p-4 font-bold placeholder-black/50 focus:bg-white focus:placeholder-black outline-none transition-colors resize-none"></textarea>
                         <button type="submit" class="bg-black text-white py-4 font-display text-xl hover:bg-white hover:text-black border-2 border-black transition-colors uppercase">ENVOYER_MESSAGE</button>
                     </form>
                 </div>
